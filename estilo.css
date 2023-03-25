@@ -1,0 +1,137 @@
+html{
+	cursor: url(imagens/banana2.png) 30 30, auto;
+}
+
+body{
+	display: flex;
+	background-image: url(imagens/arvore.png);
+	//background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.macaco1{
+	width: 90px;
+	height: 90px;
+}
+
+.macaco2{
+	width: 100px;
+	height: 100px;
+}
+
+.macaco3{
+	width: 120px;
+	height: 120px;
+}
+
+.ladoA{
+	transform: scaleX(1);
+}
+
+.ladoB{
+	transform: scaleX(-1);
+}
+
+.painel{
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	left: 0px ;
+	bottom: 0px;
+	border-topo:solid 1px #fff;
+	background-color: #fff;
+	opacity: 0.7
+}
+
+.vidas{
+	float: left;
+}
+
+.cronometro{
+	float: left;
+	font-size: 20px;
+	font-weight: bold ;
+}
+
+div .imagem-vitoria{
+	text-align: center;
+}
+
+
+
+@media(max-width: 400px){
+	.imagem-vitoria img{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+	}
+}
+
+@media (min-width: 320px) {
+	.imagem_logoMacaco {
+		display: flex;
+		justify-content: center;
+	}
+
+	.imagem_logoMacaco img{
+		width: 100%
+		display: flex;
+		justify-content: center;
+	}
+
+	body{
+		background-image: url(imagens/arvore.png);
+		background-size: 425px 600px;
+	}
+
+
+}
+
+@media (min-width: 768px) {
+	.imagem_logoMacaco {
+		display: flex;
+		justify-content: center;
+	}
+
+	.imagem_logoMacaco img{
+		width: 100%
+	}
+
+	.imagem_logoMacaco {
+		height: 50%
+	}
+
+	.container .row{
+		height: 350px;
+	}
+	.form-control{
+		margin-top: 1%;
+	}
+
+	
+
+	body{
+		background-image: url(imagens/arvore.png);
+		background-size: 768px 600px;
+	}
+
+
+}
+
+@media (min-width: 1024px) {
+	.imagem_logoMacaco {
+		display: flex;
+		justify-content: center;
+	}
+
+	.imagem_logoMacaco img{
+		width: 60%
+	}
+
+	body{
+		background-image: url(imagens/arvore.png);
+		background-size: cover;
+	}
+
+}
